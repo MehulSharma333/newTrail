@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /privacy-policy/
+Disallow: /terms-of-use/
+Disallow: /dcma-copyright-policy/
+Allow: /
+
+Sitemap: https://www.soundeffectbuttons.com/sitemap.xml 
