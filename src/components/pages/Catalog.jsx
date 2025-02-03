@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { getSoundsByCategory } from '../../database/getSoundsByCategory';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import adSense from '../adSense/adSense';
+import AdSense from '../adSense/AdSense';
 
 const Catalog = (props) => {
   const router = useRouter()
@@ -69,11 +69,11 @@ const Catalog = (props) => {
         theme="colored"
       />
       <main className="hidebar w-full dark:bg-[#212D3D] relative flex min-h-screen flex-col items-center">
-      <div className='fixed bottom-0 w-2/4 h-[80px] '><adSense adSlot="5995266007" className="w-full h-full" /></div>
+      <div className='fixed bottom-0 w-2/4 h-[80px] '><AdSense adSlot="5995266007" className="w-full h-full" /></div>
         <div className='fixed right-0 top-1/2 -translate-y-1/2 w-[100px] h-3/4 '>
-        <adSense adSlot="6454431005" className="w-full h-full" /></div>
+        <AdSense adSlot="6454431005" className="w-full h-full" /></div>
         <div className='fixed left-0 top-1/2 -translate-y-1/2 w-[100px] h-3/4 '>
-        <adSense adSlot="6454431005" className="w-full h-full" />
+        <AdSense adSlot="6454431005" className="w-full h-full" />
         </div>
         <NavbarHead active={props.catUrl === 'trending' ? 'trending' : 'categories'} />
 

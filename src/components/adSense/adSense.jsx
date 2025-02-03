@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect , useRef } from 'react';
 
-const adSense = ({adSlot , className}) => {
+const AdSense = ({adSlot , className}) => {
     const adRef = useRef(null)
     useEffect(() => {
         if (!adRef.current) return; 
@@ -28,4 +28,4 @@ const adSense = ({adSlot , className}) => {
   )
 }
 
-export default adSense
+export default AdSense
